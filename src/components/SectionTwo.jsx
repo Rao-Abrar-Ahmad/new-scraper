@@ -4,17 +4,14 @@ import Papa from 'papaparse'
 import SectionThree from './SectionThree';
 
 function SectionTwo() {
-  var csvFile = null;
   const [file, setFile] = useState(null);
   const [fileName,setFileName] = useState("");
   const [Entries,setEntries] = useState("");
-  const [EntryCount,setEntryCount] = useState("");
 
   function handleChange(e){
     //console.log('start',e.target.files);
     let file = e.target.files[0];
     setFileName(file.name);
-    csvFile = file;
     setFile(file);
     //console.log('File...',file);
     //console.log('handleing the click');
