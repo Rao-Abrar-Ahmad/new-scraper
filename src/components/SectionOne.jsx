@@ -8,7 +8,7 @@ export default function SectionOne() {
         <div className="container">
           <div className="first__banner-flex">             
             <div className="section--two">
-              <h1>Easiest And Lightest<br/>Web Scrapper You Need.</h1>
+              <h1>Easiest And Lightest<br/><span className="one">Web Scrapper</span> You Need.</h1>
               <p className="section-intro__text">
                 Unlock the power of your website data with Ac Scraper! 
                 Our comprehensive suite of scraping tools makes data extraction quick and easy, 

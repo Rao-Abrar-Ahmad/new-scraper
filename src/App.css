@@ -18,7 +18,7 @@
   box-sizing: inherit;
 }
 html {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
   background-color: var(--color-bg-main);
   color: white;
   box-sizing: border-box;
@@ -28,12 +28,12 @@ html {
 }
 body {
   margin: 0;
-  font-size: 0.875rem;
+  font-size: 16px;
   line-height: 1.5;
   scroll-behavior: smooth;
 }
 h1, h2, h3 {
-  font-family: 'Raleway', sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 h1 {
   font-size: 1.5rem;
@@ -55,7 +55,8 @@ ul {
   list-style: none;
   padding: 0;
 }
-input[type='email'], input[type='submit'] {
+input[type='email'], 
+input[type='submit'] {
   appearance: none;
   -webkit-appearance: none;
   box-shadow: none;
@@ -124,6 +125,29 @@ a.button {
   font-size: 1rem;
   min-width: 100px;
 }
+
+*::-webkit-scrollbar {
+  width: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #000; 
+  border-radius: 8px;
+}
+ 
+*::-webkit-scrollbar-thumb {
+  background: var(--colorTheme); 
+  border-radius: 8px;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--colorTheme); 
+}
+
+
+
+
+
+
 .header {
   font-family: 'Raleway', sans-serif;
   background-image: var(--BackgroundImage);
@@ -145,9 +169,13 @@ a.button {
 .header__list > * + * {
   margin-left: 25px;
 }
-.header__list a:hover, .header__list a:focus {
-  font-weight: bold;
-  text-decoration: underline;
+.header__list a{
+  font-size: 16px;
+
+}
+.header__list a:hover, 
+.header__list a:focus {
+  color:var(--colorTheme);
 }
 @media (max-width: 1023px) {
   .header__logo {
@@ -183,6 +211,11 @@ a.button {
   background-image: var(--BackgroundImage);
   padding-bottom: 30px;
 }
+.section--two .one{
+  font-family: 'Allura', cursive;
+  font-size:4rem;
+  color:var(--colorTheme);
+}
 .section-intro__text {
   margin-bottom: 2em;
   font-size: 1.25rem;
@@ -213,6 +246,7 @@ a.button {
   height: 18px;
   vertical-align: top;
   fill:var(--colorTheme);
+  display:inline-block;
 }
 .footer {
   background-color: var(--color-bg-footer);
@@ -409,6 +443,8 @@ a.button {
 }
 .csv-data{
   padding:0.5em;
+  max-height:500px;
+  overflow-y: scroll;
 }
 .csv-item{
   display:flex;
@@ -455,4 +491,64 @@ a.button {
   .main__flex .second__header{
     text-align: center;
   }
+}
+
+.contact--page{
+  background-image: var(--BackgroundImage);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: cover;
+  background-color: var(--color-bg-intro);
+}
+
+.contact--form{
+  display: flex;
+  width:100%;
+  align-items: center;
+  justify-self:flex-start;
+  text-align: left;
+  max-width:600px;
+  margin:auto;
+  flex-direction: column;
+  padding:3em;
+
+}
+.contact--form > *{
+  margin-bottom:10px;
+}
+.contact--form .form-group{
+  width:100%;
+}
+.contact--form label{
+  display: block;
+  text-align: left;
+  margin-bottom:5px;
+  font-family: Poppins;
+}
+.contact--form input,
+.contact--form textarea{
+  border:1px solid var(--colorTheme);
+  padding:12px 15px;
+  outline:none;
+  width:100%;
+  border-radius:4px;
+  font-family: Poppins;
+}
+.contact--form textarea{
+  min-height: 150px;
+}
+.contact--form .submit{
+  background-color: var(--colorTheme);
+  color:#000;
+  font-weight: 600;
+  outline:none;
+  border: none;
+}
+.contact--form .submit:is(:hover,:focus){
+  outline:none;
+  border: none;
+}
+.section--title{
+  text-align: center;
+  margin-top: 0;
 }

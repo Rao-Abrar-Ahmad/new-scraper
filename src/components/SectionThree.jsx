@@ -1,4 +1,6 @@
 import React from 'react'
+import axios from 'axios'
+
 
 
 function letsScrape(lists){
@@ -15,8 +17,15 @@ export default function SectionThree(props) {
     let count = null;
     console.log('in section threee',props.Entries);
     lists = props.Entries;
+    if(lists){
+
+    
     count = lists.length;
-    letsScrape(lists)
+  }
+    if(count > 0){
+      letsScrape(lists)
+    }
+    
   return (
     <>
       <section className="section--third">

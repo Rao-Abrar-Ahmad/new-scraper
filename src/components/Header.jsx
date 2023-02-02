@@ -1,19 +1,21 @@
 import React from 'react'
 import logo from '../assets/images/png/logo-no-background.png'
+import { Link } from 'react-router-dom'
+
 
 export default function Header() {
   return (
     <>
       <header className="header">
         <div className="container container--1 header__container">
-            <a href="/">
+            <Link to="/">
             <img className="header__logo" src={logo} 
                  width="150" alt="AC Scraper" />
-            </a>
+            </Link>
             <nav>
             <ul className="header__list">
-                <a href="/">Home</a>
-                <a href="/about">About</a>
+                <Link to="/">Home</Link>
+                <Link to="/contact">Contact Us</Link>
             </ul>
             </nav>
          </div>
