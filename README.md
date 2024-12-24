@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# Ac Scraper
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Any CSV File Scraper - A codebase to test csv parsing on the clint-side in react using 
+Papa Parser
 
 ## Available Scripts
 
