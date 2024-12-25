@@ -21,7 +21,7 @@ function SectionTwo() {
         setEntries(results.data);
       },
     });
-    //console.log('File...',file);
+    console.log('File...',file);
     //console.log('handleing the click');
   }
   return (
