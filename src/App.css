@@ -552,3 +552,18 @@ a.button {
   text-align: center;
   margin-top: 0;
 }
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: 1px solid var(--colorTheme);
+  padding: 8px;
+}
+
+pre {
+  white-space: pre-wrap;
+}
